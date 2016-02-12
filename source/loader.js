@@ -18,3 +18,4 @@ function progress()
         }
     }, 10);
 }
+
