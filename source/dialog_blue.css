@@ -3,6 +3,11 @@
     src: url(Ubuntu-C.ttf);
 }
 
+body
+{
+	background-color: #0C3A65;
+}
+
 .login_box
 {
 	background-image: url("http://localhost/album/login_box.png");
@@ -20,17 +25,105 @@
 	font-family: ubuntu;
 }
 
+.register_box
+{
+	background-image: url("http://localhost/album/register_box.png");
+	width: 343px;
+	height: 367px;
+	position: absolute;
+    z-index: 1002;
+    cursor: default;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+	font-family: ubuntu;
+}
+
+.motd_box
+{
+	background-image: url("http://localhost/album/motd_box.png");
+	width: 340px;
+	height: 202px;
+	position: absolute;
+    z-index: 1002;
+    cursor: default;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+	font-family: ubuntu;
+}
+
+
 #input
 {
-	width: 95%;
+	width: 200px;
 	height: 18px;
 	border: 1px rgb(0, 0, 0) solid;
 	background: rgb(255,255,255);
 }
 
+label > input{ /* HIDE RADIO */
+  display:none;
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+#motd_button
+{
+	width: 100px;
+	height: 21px;
+	border: 1px rgb(0,0,0) solid;
+	position: absolute;
+	top:0;
+    bottom: -70%;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+	background: rgb(255,255,255);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-family: ubuntu;
+}
+
 #login
 {
 	width: 35%;
+	height: 21px;
+
+	border: 1px rgb(0,0,0) solid;
+
+	background: rgb(255,255,255);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-family: ubuntu;
+}
+
+#register
+{
+	width: 45%;
 	height: 21px;
 
 	border: 1px rgb(0,0,0) solid;
