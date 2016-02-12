@@ -5,11 +5,12 @@
 
 .login_box
 {
-	background-image: url(./album/login_box.png);
+	background-image: url("http://localhost/album/login_box.png");
 	width: 340px;
 	height: 202px;
-	z-index: 100;
-	position: fixed;
+	position: absolute;
+    z-index: 1002;
+    cursor: default;
     top:0;
     bottom: 0;
     left: 0;
