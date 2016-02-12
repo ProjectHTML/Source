@@ -14,7 +14,7 @@ function progress()
         else if(i == 100 || i == 101)
         {
             $(".background").fadeOut("fast");
-			$(".login_box").show();
+			$(".login_box").fadeIn("fast");
         }
     }, 10);
 }
