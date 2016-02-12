@@ -1,0 +1,43 @@
+@font-face {
+    font-family: ubuntu;
+    src: url(Ubuntu-C.ttf);
+}
+
+.login_box
+{
+	background-image: url(./album/login_box.png);
+	width: 340px;
+	height: 202px;
+	z-index: 100;
+	position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+	font-family: ubuntu;
+}
+
+#input
+{
+	width: 95%;
+	height: 18px;
+	border: 1px rgb(0, 0, 0) solid;
+	background: rgb(255,255,255);
+}
+
+#login
+{
+	width: 35%;
+	height: 21px;
+
+	border: 1px rgb(0,0,0) solid;
+
+	background: rgb(255,255,255);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-family: ubuntu;
+}
