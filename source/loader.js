@@ -2,18 +2,19 @@ window.onload=progress;
 
 function progress()
 {
+	$(".login_box").hide();
     var i = 0;
     setInterval(function ()
     {
         if (i != 101)
         {
-            $("#bar").html(i + "%");
             $("#progress").css('width', i + '%');
             i++;
         }
         else if(i == 100 || i == 101)
         {
-            $(".background").fadeOut("slow");
+            $(".background").fadeOut("fast");
+			$(".login_box").show();
         }
-    }, 100);
+    }, 10);
 }
